@@ -35,11 +35,9 @@ df = pd.DataFrame(d)
 h = df.loc['Statviewtype', 'SiteKit'][0].keys()
 headers = list(h)
 stats_list = df.loc['Statviewtype', 'SiteKit']
-#stats = list(s)
+
 stats = []
 for value in stats_list:
     stats.append(value)
 
-for i in stats:
-    for key, value in i:
-        print(key)
+# print(stats[3]) will give you Tomisano, and you can see what im talking about
