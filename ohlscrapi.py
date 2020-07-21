@@ -40,4 +40,7 @@ stats = []
 for value in stats_list:
     stats.append(value)
 
-# print(stats[3]) will give you Tomisano, and you can see what im talking about
+#All players stats from season
+s = pd.DataFrame(stats)
+s.to_csv(r'C:\Users\timwa\Desktop\OHL-stats.csv', index=False)
+
